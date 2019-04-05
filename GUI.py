@@ -47,18 +47,24 @@ def stylo():
     window = Tk()
     window.title("Stylometric Analysis")
     window.geometry('450x300')
+    window.configure(background='blue')
+
 
     mrg1=Label(window,text='')
     mrg1.grid(column=0, row=0)
+    mrg1.configure(background='blue')
 
     mrg2=Label(window,text='')
     mrg2.grid(column=1, row=1)
+    mrg2.configure(background='blue')
 
     mrg3=Label(window,text='')
     mrg3.grid(column=2, row=2)
+    mrg3.configure(background='blue')
 
     mrg4=Label(window,text='')
     mrg4.grid(column=3, row=3)
+    mrg4.configure(background='blue')
 
     mrg5=Label(window,text='')
     mrg5.grid(column=4, row=4)
@@ -75,7 +81,7 @@ def stylo():
  
     txt.grid(column=6, row=7,columnspan=2)
 
-    btn = Button(window, text="Click Me",bg="orange", fg="red",command=clicked)
+    btn = Button(window, text="Click Me",bg="orange", fg="white",command=clicked)
  
     btn.grid(column=6, row=9)
 

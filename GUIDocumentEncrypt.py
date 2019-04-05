@@ -39,22 +39,24 @@ def fileEncrypt():
     window = Tk()
     window.title("Document Locker")
     window.geometry('450x300')
+    window.configure(background='black')
     
     mrg1=Label(window,text='')
     mrg1.grid(column=0, row=0)
+    mrg1.configure(background='black')
 
     mrg2=Label(window,text='')
     mrg2.grid(column=1, row=1)
-
+    mrg2.configure(background='black')
+    
     mrg3=Label(window,text='')
     mrg3.grid(column=2, row=2)
-
+    mrg3.configure(background='black')
+    
     mrg4=Label(window,text='')
     mrg4.grid(column=3, row=3)
-
-    mrg5=Label(window,text='')
-    mrg5.grid(column=4, row=4)
-
+    mrg4.configure(background='black')
+    
     mrg5=Label(window,text='')
     mrg5.grid(column=4, row=6)
     global txt
@@ -69,7 +71,7 @@ def fileEncrypt():
     txt1 = Entry(window,width=40)
     txt1.grid(column=6, row=8,columnspan=2)
     
-    btn = Button(window, text="Click Me",bg="orange", fg="red",command=clicked)
+    btn = Button(window, text="Click Me",bg="orange", fg="white",command=clicked)
     btn.grid(column=6, row=9)
 
     window.mainloop()
